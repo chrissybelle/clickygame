@@ -6,7 +6,7 @@ class Header extends React.Component {
     render() {
         let currentScore = 0;
 
-        if(this.props.clicked == false) {
+        if(this.props.clicked === false) {
             return (
                 <div>
                 <h3>You guessed correctly!</h3>

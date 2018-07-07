@@ -6,45 +6,78 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import images from "./images.json";
 import './App.css';
 
+
+// function shuffleImages() {
+//   let images = this.state.images.map((a) => 
+//   [Math.random(),a]).sort((a,b) => 
+//     a[0]-b[0]).map((a) => 
+//       a[1]);
+//   this.setState({ images });
+// }
+
+//function to shuffle position of images
+function shuffleImages(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // eslint-disable-line no-param-reassign
+  }
+}
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      images
+      images,
+      clickedArray: [],
+      feedback: "",
+      currentScore: 0,
+      topScore: 0
     };
   }
 
-  handleClick(id) {
-    console.log(this.state.images);
-    // let clickedArray = [];
-    // let clickedImage = this.state.images.filter(image => image.id !== id);
-    let images = this.state.images.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
-    console.log(images);
-    this.setState({ images });
-  }
 
-// clicked = id => {
-//   console.log(this.state.images.clicked);
-//   if (this.state.images.clicked == false) {
-//     this.setState({clicked: true})
-//   }
-// }
+handleClick = (id) => {
+  //check if image has been clicked yet
+  if (this.state.clickedArray.indexOf(id) < 0) {
+    //if image hos not been clicked (added to clickedArray) yet, add id of clicked image to "clickedArray"
+    this.state.clickedArray.push(id);
+    console.log("clickedArray" + this.state.clickedArray);
+    //increment currentScore
+    this.state.currentScore++;
+    console.log("currentScore:" + this.state.currentScore);
+    //show positive feedback
+    this.state.feedback="You guessed correctly!";
+    console.log("feedback:" + this.state.feedback);
+    //shuffle Images
+    shuffleImages(this.state.images);
+    this.setState({ images })
+    //if image has been clicked already
+  } else {
+      //if player reaches new high score, update top score
+      if (this.state.currentScore > this.state.topScore) {
+        this.state.topScore = this.state.currentScore;
+        console.log("topscore:" + this.state.topScore);
+      }
+    //reset clickedArray
+    this.state.clickedArray=[];
+    console.log("clickedArray" + this.state.clickedArray);
+    //reset currentScore
+    this.state.currentScore=0;
+    console.log("currentScore:" + this.state.currentScore);
+    //show negative feedback
+    this.state.feedback="You guessed incorrectly";
+    console.log("feedback:" + this.state.feedback);
+    //shuffle Images
+    shuffleImages(this.state.images);
+    this.setState({ images })
+}
+
+
+}
+
 
   render() {
-    // let imagesArray = images;
-    // console.log(images);
-    // let clickedImages = [];
-
-    // shuffleImages() {
-    //     this.setState({shuffledArray});
-    //     if (this.clicked == false) {
-    //       return (
-
-    //)
-    //}
-    // };
-    
 
     return (
       <div>
@@ -58,15 +91,15 @@ class App extends React.Component {
           </div>
           <Wrapper> 
             {this.state.images.map(image => (
+              
               <Card
                 id={image.id}
                 key={image.id}
                 image={image.image}
-                clicked={this.clicked}
-                onClick={this.handleClick}
+                handleClick={this.handleClick}
               />
             ))}
-            {/* <Shuffled /> */}
+
           </Wrapper>
         </div>
 
