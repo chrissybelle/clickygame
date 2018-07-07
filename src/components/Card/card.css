@@ -1,0 +1,35 @@
+/* .image {
+    background: #fff;
+    border-radius: 2px;
+    height: 150px;
+    margin: 1rem;
+    position: relative;
+    width: 150px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  }
+  
+  .card:hover {
+    border-radius: 3px solid #d50000;
+  }
+   */
+
+   .card {
+    background: #fff;
+    border-radius: 2px;
+    height: 200px;
+    margin: 1rem;
+    position: relative;
+    width: 200px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  }
+  
+  .card > .img-container {
+    padding: 5px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card > .img-container > img {
+    width: 100%
+  }

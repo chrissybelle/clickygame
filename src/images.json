@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "one",
+        "image": "https://i.pinimg.com/originals/7c/6b/be/7c6bbe957f27ae20edff5dbecdd0a4bb.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "one",
+        "image": "http://static.logomaker.com.s3-us-west-2.amazonaws.com/wp-content/uploads/2013/09/Starbucks-Logo.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "one",
+        "image": "http://2.bp.blogspot.com/-sj-4SkzFGm8/UGAigF1cu9I/AAAAAAAAABQ/-sPoUUdyyKM/s1600/adidas-logo-300x300.gif",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "one",
+        "image": "https://www.companyfolders.com/blog/media/2015/01/chupa-chups-300x300.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "one",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqudwc5r2pQIwqIT0T3CelytnE76fXpgq65vciUnEGVL64WPvfg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "one",
+        "image": "https://www.thespurgroup.com/hubfs/202%20-%20Clients/Client%20Logos%20-%20Individual/Dell_Logo.svg?t=1530297300990",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "one",
+        "image": "http://images6.fanpop.com/image/photos/39800000/Burger-King-Logo-1-logos-39803133-300-300.png",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "one",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxHpgbbHVDbenEJLDETOy13scY8ubVmokFET5UKuh0VmJwNTfKQ",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "one",
+        "image": "https://tdesigns.in/file/2017/04/0-300x300.png",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "one",
+        "image": "http://pluspng.com/img-png/samsung-logo-png-samsung-logo-png-300.png",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "one",
+        "image": "http://www.logotypes101.com/logos/826/D592D06D4169E6AF4FA8AE52B187E1F2/beatslogo.png",
+        "clicked": false
+    },
+        {
+        "id": 12,
+        "name": "one",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXeNl5hC0P9uJ-ZMNN2USxAos97z5xOfHWvsA0-FYYE_J4rU9",
+        "clicked": false
+    }
+]
