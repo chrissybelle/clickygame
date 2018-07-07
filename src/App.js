@@ -1,19 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from "./components/Header/Header";
 import Card from "./components/Card/Card";
 import Wrapper from "./components/Wrapper/Wrapper";
-// import Image from "./components/Image/Image";
 import images from "./images.json";
 import './App.css';
 
-
-// function shuffleImages() {
-//   let images = this.state.images.map((a) => 
-//   [Math.random(),a]).sort((a,b) => 
-//     a[0]-b[0]).map((a) => 
-//       a[1]);
-//   this.setState({ images });
-// }
 
 //function to shuffle position of images
 function shuffleImages(array) {
@@ -36,19 +27,19 @@ class App extends React.Component {
     };
   }
 
-
+//onClick function
 handleClick = (id) => {
   //check if image has been clicked yet
   if (this.state.clickedArray.indexOf(id) < 0) {
     //if image hos not been clicked (added to clickedArray) yet, add id of clicked image to "clickedArray"
     this.state.clickedArray.push(id);
-    console.log("clickedArray" + this.state.clickedArray);
+      // console.log("clickedArray" + this.state.clickedArray);
     //increment currentScore
     this.state.currentScore++;
-    console.log("currentScore:" + this.state.currentScore);
+      // console.log("currentScore:" + this.state.currentScore);
     //show positive feedback
     this.state.feedback="You guessed correctly!";
-    console.log("feedback:" + this.state.feedback);
+      // console.log("feedback:" + this.state.feedback);
     //shuffle Images
     shuffleImages(this.state.images);
     this.setState({ images })
@@ -57,23 +48,21 @@ handleClick = (id) => {
       //if player reaches new high score, update top score
       if (this.state.currentScore > this.state.topScore) {
         this.state.topScore = this.state.currentScore;
-        console.log("topscore:" + this.state.topScore);
+          // console.log("topscore:" + this.state.topScore);
       }
     //reset clickedArray
     this.state.clickedArray=[];
-    console.log("clickedArray" + this.state.clickedArray);
+      // console.log("clickedArray" + this.state.clickedArray);
     //reset currentScore
     this.state.currentScore=0;
-    console.log("currentScore:" + this.state.currentScore);
+      // console.log("currentScore:" + this.state.currentScore);
     //show negative feedback
     this.state.feedback="You guessed incorrectly";
-    console.log("feedback:" + this.state.feedback);
+      // console.log("feedback:" + this.state.feedback);
     //shuffle Images
     shuffleImages(this.state.images);
     this.setState({ images })
-}
-
-
+  }
 }
 
 
@@ -83,10 +72,14 @@ handleClick = (id) => {
       <div>
         <div className="App">
           <header className="App-header">
-            <Header />
+            <Header 
+              feedback = {this.state.feedback}
+              currentScore = {this.state.currentScore}
+              topScore = {this.state.topScore}
+            />
           </header>
           <div className="jumbotron">
-            <h1>Clicky Game!</h1>
+            <h3>Clicky Game!</h3>
             <p>Click on an image to earn points, but don't click on any more than once!</p>
           </div>
           <Wrapper> 

@@ -4,25 +4,21 @@ import "./Header.css";
 
 class Header extends React.Component {
     render() {
-        let currentScore = 0;
 
-        if(this.props.clicked === false) {
-            return (
-                <div>
-                <h3>You guessed correctly!</h3>
-                <h3>Current Score: {currentScore++}</h3>
+        return (
+            <nav>
+                <div className="feedbackDiv">
+                <span className="feedback">{this.props.feedback}</span> 
+                </div>                                                                                                                                                                                                                                                                                                                                                                
+                <div className="scoreKeeper">
+                    <span className="currentScore">Current Score: {this.props.currentScore} | </span>
+                    <span className="topScore">Top Score: {this.props.topScore}</span>
                 </div>
-            );
-        } else {
-            return (
-                <div>
-                <h3>You guessed incorrectly!</h3>
-                <h3>Current Score: {currentScore = 0}</h3>
-                </div>
-            )
-        }
+            </nav>
+        );
+
     }
 
 }
-
-export default Header;
+        
+export default Header;  

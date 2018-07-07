@@ -26,9 +26,7 @@ class Card extends React.Component {
         return (
             <div className="card">
             <div className="img-container">
-            {/* <img className="image" onClick={this.props.onClick} alt={name} src={image} /> */}
-            <img className="image" onClick={() => handleClick(id)} alt={name} src={image} clicked={clicked}/>
-            {/* <Shuffled src={image}/> */}
+            <img className="image" onClick={() => handleClick(id)} alt={name} src={image} />
             </div>
             </div>
 
@@ -40,7 +38,7 @@ Card.propTypes = {
     name: PropTypes.string,
     image: PropTypes.string,
     id: PropTypes.number,
-    clicked: PropTypes.bool,
+
     handleClick: PropTypes.func
 }
 

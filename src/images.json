@@ -2,73 +2,61 @@
     {
         "id": 1,
         "name": "nike",
-        "image": "https://i.pinimg.com/originals/7c/6b/be/7c6bbe957f27ae20edff5dbecdd0a4bb.jpg",
-        "clicked": false
+        "image": "https://i.pinimg.com/originals/7c/6b/be/7c6bbe957f27ae20edff5dbecdd0a4bb.jpg"
     },
     {
         "id": 2,
         "name": "starbucks",
-        "image": "http://static.logomaker.com.s3-us-west-2.amazonaws.com/wp-content/uploads/2013/09/Starbucks-Logo.png",
-        "clicked": false
+        "image": "http://static.logomaker.com.s3-us-west-2.amazonaws.com/wp-content/uploads/2013/09/Starbucks-Logo.png"
     },
     {
         "id": 3,
         "name": "adidas",
-        "image": "http://2.bp.blogspot.com/-sj-4SkzFGm8/UGAigF1cu9I/AAAAAAAAABQ/-sPoUUdyyKM/s1600/adidas-logo-300x300.gif",
-        "clicked": false
+        "image": "http://2.bp.blogspot.com/-sj-4SkzFGm8/UGAigF1cu9I/AAAAAAAAABQ/-sPoUUdyyKM/s1600/adidas-logo-300x300.gif"
     },
     {
         "id": 4,
         "name": "chupachups",
-        "image": "https://www.companyfolders.com/blog/media/2015/01/chupa-chups-300x300.jpg",
-        "clicked": false
+        "image": "https://www.companyfolders.com/blog/media/2015/01/chupa-chups-300x300.jpg"
     },
     {
         "id": 5,
         "name": "hbo",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqudwc5r2pQIwqIT0T3CelytnE76fXpgq65vciUnEGVL64WPvfg",
-        "clicked": false
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqudwc5r2pQIwqIT0T3CelytnE76fXpgq65vciUnEGVL64WPvfg"
     },
     {
         "id": 6,
         "name": "dell",
-        "image": "https://www.thespurgroup.com/hubfs/202%20-%20Clients/Client%20Logos%20-%20Individual/Dell_Logo.svg?t=1530297300990",
-        "clicked": false
+        "image": "https://www.thespurgroup.com/hubfs/202%20-%20Clients/Client%20Logos%20-%20Individual/Dell_Logo.svg?t=1530297300990"
     },
     {
         "id": 7,
         "name": "bk",
-        "image": "http://images6.fanpop.com/image/photos/39800000/Burger-King-Logo-1-logos-39803133-300-300.png",
-        "clicked": false
+        "image": "http://images6.fanpop.com/image/photos/39800000/Burger-King-Logo-1-logos-39803133-300-300.png"
     },
     {
         "id": 8,
         "name": "apple",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxHpgbbHVDbenEJLDETOy13scY8ubVmokFET5UKuh0VmJwNTfKQ",
-        "clicked": false
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxHpgbbHVDbenEJLDETOy13scY8ubVmokFET5UKuh0VmJwNTfKQ"
     },
     {
         "id": 9,
         "name": "pepsi",
-        "image": "https://tdesigns.in/file/2017/04/0-300x300.png",
-        "clicked": false
+        "image": "https://tdesigns.in/file/2017/04/0-300x300.png"
     },
     {
         "id": 10,
         "name": "samsung",
-        "image": "http://pluspng.com/img-png/samsung-logo-png-samsung-logo-png-300.png",
-        "clicked": false
+        "image": "http://pluspng.com/img-png/samsung-logo-png-samsung-logo-png-300.png"
     },
     {
         "id": 11,
         "name": "beats",
-        "image": "http://www.logotypes101.com/logos/826/D592D06D4169E6AF4FA8AE52B187E1F2/beatslogo.png",
-        "clicked": false
+        "image": "http://www.logotypes101.com/logos/826/D592D06D4169E6AF4FA8AE52B187E1F2/beatslogo.png"
     },
         {
         "id": 12,
         "name": "fb",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXeNl5hC0P9uJ-ZMNN2USxAos97z5xOfHWvsA0-FYYE_J4rU9",
-        "clicked": false
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXeNl5hC0P9uJ-ZMNN2USxAos97z5xOfHWvsA0-FYYE_J4rU9"
     }
 ]
