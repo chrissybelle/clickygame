@@ -6,7 +6,7 @@ class Header extends React.Component {
     render() {
 
         return (
-            <nav>
+            <div>
                 <div className="feedbackDiv">
                 <span className="feedback">{this.props.feedback}</span> 
                 </div>                                                                                                                                                                                                                                                                                                                                                                
@@ -14,11 +14,11 @@ class Header extends React.Component {
                     <span className="currentScore">Current Score: {this.props.currentScore} | </span>
                     <span className="topScore">Top Score: {this.props.topScore}</span>
                 </div>
-            </nav>
+            </div>
         );
 
     }
 
 }
-        
+
 export default Header;  

@@ -9,8 +9,8 @@ import './App.css';
 //function to shuffle position of images
 function shuffleImages(array) {
   for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]]; // eslint-disable-line no-param-reassign
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // eslint-disable-line no-param-reassign
   }
 }
 
@@ -27,43 +27,43 @@ class App extends React.Component {
     };
   }
 
-//onClick function
-handleClick = (id) => {
-  //check if image has been clicked yet
-  if (this.state.clickedArray.indexOf(id) < 0) {
-    //if image hos not been clicked (added to clickedArray) yet, add id of clicked image to "clickedArray"
-    this.state.clickedArray.push(id);
+  //onClick function
+  handleClick = (id) => {
+    //check if image has been clicked yet
+    if (this.state.clickedArray.indexOf(id) < 0) {
+      //if image hos not been clicked (added to clickedArray) yet, add id of clicked image to "clickedArray"
+      this.state.clickedArray.push(id);
       // console.log("clickedArray" + this.state.clickedArray);
-    //increment currentScore
-    this.state.currentScore++;
+      //increment currentScore
+      this.state.currentScore++;
       // console.log("currentScore:" + this.state.currentScore);
-    //show positive feedback
-    this.state.feedback="You guessed correctly!";
+      //show positive feedback
+      this.state.feedback = "You guessed correctly!";
       // console.log("feedback:" + this.state.feedback);
-    //shuffle Images
-    shuffleImages(this.state.images);
-    this.setState({ images })
-    //if image has been clicked already
-  } else {
+      //shuffle Images
+      shuffleImages(this.state.images);
+      this.setState({ images })
+      //if image has been clicked already
+    } else {
       //if player reaches new high score, update top score
       if (this.state.currentScore > this.state.topScore) {
         this.state.topScore = this.state.currentScore;
-          // console.log("topscore:" + this.state.topScore);
+        // console.log("topscore:" + this.state.topScore);
       }
-    //reset clickedArray
-    this.state.clickedArray=[];
+      //reset clickedArray
+      this.state.clickedArray = [];
       // console.log("clickedArray" + this.state.clickedArray);
-    //reset currentScore
-    this.state.currentScore=0;
+      //reset currentScore
+      this.state.currentScore = 0;
       // console.log("currentScore:" + this.state.currentScore);
-    //show negative feedback
-    this.state.feedback="You guessed incorrectly";
+      //show negative feedback
+      this.state.feedback = "You guessed incorrectly";
       // console.log("feedback:" + this.state.feedback);
-    //shuffle Images
-    shuffleImages(this.state.images);
-    this.setState({ images })
+      //shuffle Images
+      shuffleImages(this.state.images);
+      this.setState({ images })
+    }
   }
-}
 
 
   render() {
@@ -71,20 +71,25 @@ handleClick = (id) => {
     return (
       <div>
         <div className="App">
-          <header className="App-header">
-            <Header 
-              feedback = {this.state.feedback}
-              currentScore = {this.state.currentScore}
-              topScore = {this.state.topScore}
-            />
-          </header>
-          <div className="jumbotron">
-            <h3>Clicky Game!</h3>
-            <p>Click on an image to earn points, but don't click on any more than once!</p>
+
+          <div className="headerContainer">
+            <div className="jumbotron">
+              <h2>Pick a 'chu ~ !</h2>
+              <p>Click on an image to earn points, but don't click on any more than once!</p>
+            </div>
+
+            <header className="App-header">
+              <Header
+                feedback={this.state.feedback}
+                currentScore={this.state.currentScore}
+                topScore={this.state.topScore}
+              />
+            </header>
           </div>
-          <Wrapper> 
+
+          <Wrapper>
             {this.state.images.map(image => (
-              
+
               <Card
                 id={image.id}
                 key={image.id}
